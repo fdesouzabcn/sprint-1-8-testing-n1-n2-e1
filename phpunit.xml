@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    bootstrap="tests/bootstrap.php" -> runs this file before tests start 
+-->
+<phpunit
+    bootstrap="tests/bootstrap.php" 
+    colors="true"
+    verbose="true"
+    stopOnFailure="false"
+    backupGlobals="false"
+    backupStaticAttributes="false"
+    convertErrorsToExceptions="true"
+    convertNoticesToExceptions="true"
+    convertWarningsToExceptions="true"
+    failOnWarning="false"
+    failOnRisky="false"
+    processIsolation="false"
+>
+    <testsuites>
+        <testsuite name="Project Test Suite">
+            <directory suffix="Test.php">tests</directory> 
+        </testsuite>
+    </testsuites>
+    <php>
+        <ini name="error_reporting" value="-1"/>
+        <env name="APP_ENV" value="testing"/>
+    </php>
+</phpunit>
