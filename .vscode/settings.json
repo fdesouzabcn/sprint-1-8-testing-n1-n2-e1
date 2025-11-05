@@ -2,8 +2,4 @@
   "php.validate.executablePath": "${workspaceFolder}/tools/php/php.exe",
   "phpunit.php": "${workspaceFolder}/tools/php/php.exe",
   "phpunit.phpunit": "${workspaceFolder}/tools/phpunit/phpunit.bat",
-
-  // === PHPUnit Options ===
-  "phpunit.args": ["--colors=always"],
-  "phpunit.autoDiscover": true
 }
